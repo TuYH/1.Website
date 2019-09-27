@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="getCode.aspx.cs" Inherits="adminmanage_FileManager_Client_getCode" %>

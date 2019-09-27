@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_goods>
+  <Field Type="SingleLine" Name="title" Title="标题" Note="标题" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Image" Name="Photo" Title="产品图片" Note="产品图片" Prompt="" Validator=""><![CDATA[http://www.hnxlzx.cn/style/images/bg.jpg]]></Field>
+  <Field Type="SingleLine" Name="title1" Title="副标题" Note="副标题" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="MultiLine" Name="note" Title="信息概要" Note="信息概要" Prompt="概要不得超过500字符！" Width="500" Height="100" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="Content" Title="内容" Note="详细内容" Prompt="" EditorType="3" Width="580" Height="400" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="发布日期" Note="" Prompt="必须为日期" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+</tb_U_goods>

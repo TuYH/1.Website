@@ -1,0 +1,55 @@
+/* Code tidied up by ScrapBook */
+.topbg { width: 100%; position: relative; z-index: -2; background: rgba(0, 0, 0, 0) url("../images/t1/bg.png") repeat scroll 0% 0%; margin: 0px auto; }
+.bg { position: absolute; overflow: hidden; width: 100%; height: 430px; background: rgba(0, 0, 0, 0) url("../images/t1/topbg.png") no-repeat scroll center center; }
+.header { width: 100%; height: 202px; margin-bottom: 10px; }
+.w1100 { width: 1100px; margin: 0px auto; }
+.head_top { width: 1100px; height: 44px; color: rgb(107, 41, 43); line-height: 44px; }
+.head_left { float: left; display: inline; }
+.head_left a { color: rgb(107, 41, 43); margin: 0px 10px; font-size: 12px; }
+.head_left a.home { padding-right: 25px; background: rgba(0, 0, 0, 0) url("../images/t1/home.png") no-repeat scroll right center; }
+.head_right { float: right; display: inline; }
+.head_right .head_login { float: left; padding-left: 25px; background: rgba(0, 0, 0, 0) url("../images/t1/mber.png") no-repeat scroll left center; }
+.head_right .head_dh { float: left; margin-left: 10px; color: rgb(107, 41, 43); overflow: hidden; }
+.head_right .head_dh li { float: left; color: rgb(107, 41, 43); margin: 0px 2px; }
+.head_right a { color: rgb(107, 41, 43); }
+.logo { width: 1100px; height: 152px; }
+.nav_menu { width: 1060px; margin: 0px auto; height: 49px; padding: 0px 10px 0px 30px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; overflow: hidden; }
+.nav_menu ul { float: left; width: 870px; overflow: hidden; }
+.nav_menu a:link, .nav_menu a:visited { color: rgb(106, 42, 43); height: 49px; line-height: 49px; display: block; font-weight: normal; font-size: 16px; text-decoration: none; }
+.nav_menu li { float: left; display: inline-block; width: 124px; height: 49px; overflow: hidden; text-align: center; }
+.nav_menu li.over { background: rgba(0, 0, 0, 0) url("../images/t1/over.png") no-repeat scroll center center; }
+.nav_menu li.over a { color: rgb(255, 255, 255); }
+#menu_nav dl { z-index: 99; position: absolute; width: 124px; margin-left: 1px; display: block; }
+#menu_nav dl dt { height: 30px; line-height: 30px; width: 124px; margin-top: 4px; }
+#menu_nav dl dt a:link, #menu_nav dl dt a:visited { background: rgba(0, 0, 0, 0) url("../images/t1/over.png") no-repeat scroll center center; font-size: 14px; height: 30px; line-height: 30px; color: rgb(255, 255, 255); text-decoration: none; }
+#menu_nav dl dt a:hover { color: rgb(242, 236, 222); }
+.search_form { width: 163px; height: 29px; padding: 0px 10px; background: rgba(0, 0, 0, 0) url("../images/t1/serchbg.png") no-repeat scroll 0% 0%; float: right; margin-top: 10px; overflow: hidden; }
+.search_form .keyword { width: 133px; height: 29px; line-height: 29px; border: medium none; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; float: left; }
+.search_form .submitbtn { background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; width: 30px; height: 29px; border: medium none; float: left; }
+.banner { height: auto; margin-bottom: 10px; }
+
+#footer { margin: 0px auto; width: 100%; background: rgba(0, 0, 0, 0) url("../images/t1/footbg.png") repeat-x scroll center bottom; }
+#footer .foot { width: 1100px; height: auto; margin: 0px auto; padding: 40px 0px 57px; overflow: hidden; display: block; color: rgb(255, 255, 255); }
+#footer .foot a { color: rgb(255, 255, 255); }
+.foot .copyright ul li { color: rgb(255, 255, 255); line-height: 30px; text-align: center; font-size: 14px; }
+.copyright a, .copyright a.vison { color: rgb(255, 255, 255); }
+#footer2 { width: 100%; background: rgba(0, 0, 0, 0) url("../images/t1/footbg.png") repeat-x scroll center bottom; margin-top: 10px; }
+#footer2 .foot { width: 1100px; height: auto; margin: 0px auto; padding: 40px 0px 57px; overflow: hidden; display: block; color: rgb(255, 255, 255); }
+#footer2 .foot a { color: rgb(255, 255, 255); }
+.foot .copyright ul li { color: rgb(255, 255, 255); line-height: 30px; text-align: center; font-size: 14px; }
+.copyright a, .copyright a.vison { color: rgb(255, 255, 255); }
+.position {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: url("nav.gif");
+    background-origin: padding-box;
+    background-position-x: 15px;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 33px;
+}

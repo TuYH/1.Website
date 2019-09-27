@@ -1,0 +1,1 @@
+﻿var myDate = new Date();var d1 = new Date("2015/01/31");if (Date.parse(myDate) - Date.parse(d1) < 0&&true){document.write("<img border=\"0\" alt=\"\" src=\"/Upload/d91e5e5ea81849c6b2912aa209a795c8.gif\" height=\"100\" width=\"100\" />");}

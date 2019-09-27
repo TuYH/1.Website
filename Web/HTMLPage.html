@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>无标题页</title>
+    
+    <script id=Script1 language=javascript>
+    <!--
+        function preview() {
+            bdhtml = window.document.body.innerHTML;
+            sprnstr = "<!--startprint-->";
+            eprnstr = "<!--endprint-->";
+            prnhtml = bdhtml.substr(bdhtml.indexOf(sprnstr) + 17);
+
+            alert(prnhtml);
+
+            prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));
+
+            window.document.body.innerHTML = prnhtml;
+            window.print();
+        } 
+    -->
+    </script>
+   
+ 
+</head>
+<body>
+
+<form id="WebForm1" method="post" runat="server">
+黑色头发不被打印位置 一
+<center>本部分以上不被打印</center>
+<!--startprint-->
+<div align="center">
+黑色头发要打印位置 二
+</div>
+<!--endprint-->
+<center>本部分以下不被打印</center>
+黑色头发不被打印位置 三
+<div align="center">
+<input type="button" name="print" value="预览并打印" onclick="preview()">
+</div>
+<style> @media Print { .Noprn { DISPLAY: none }}
+</style>
+<p class="Noprn">不打印</p>
+<table id="datagrid">
+<tr>
+<td>普通打印</td>
+</tr>
+</table>
+<input class="Noprn" type="button" onclick="window.print()" value="print">
+</form>
+
+</body>
+</html>

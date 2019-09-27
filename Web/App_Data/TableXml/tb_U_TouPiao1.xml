@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_TouPiao1>
+  <Field Type="Number" Name="FatherId" Title="投票管理id" Note="投票管理id" Prompt="投票管理id" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="title" Title="选项标题" Note="选项标题" Prompt="选项标题" MaxLength="100" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="VoteType" Title="投票类型" Note="投票类型1为多选2为单选" Prompt="投票类型" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="DateTime" Name="AddTime" Title="添加时间" Note="添加时间" Prompt="添加时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="Number" Name="Click" Title="投票数量" Note="投票数量" Prompt="投票数量" Bit="0" Validator=""><![CDATA[0]]></Field>
+</tb_U_TouPiao1>

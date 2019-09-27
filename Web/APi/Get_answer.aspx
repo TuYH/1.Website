@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Get_answer.aspx.cs" Inherits="APi_Get_answer" %>

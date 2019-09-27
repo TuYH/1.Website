@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+ *@Generator -> LiHuiGang - Email:lhg133@126.com - QQ:463214570
+ *@Copyright (c) 2009 LiHuiGang Compostion - Blog:http://www.cnblogs.com/lhgstudio
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>lhgdialog - samples</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+body{margin:0;padding:0;font:14px Verdana, Arial, sans-serif;line-height:200%;}
+#content{padding-left:50px;padding-right:50px;}
+#content h2{font-size:18px;color:#1E9300;padding-top:8px;margin-bottom:8px;}
+#content h3{margin-top:8px;margin-bottom:8px;FONT:bold 14px 宋体,tahoma,arial,sans-serif;COLOR:#0033CC;}
+#content div{margin-top:10px;margin-bottom:10px;border:#666 solid 1px;padding:10px;}
+#content span{color:#f00;font-weight:bold;}
+ul, ol{color:#000000;}
+	</style>
+	<script type="text/javascript" src="lhgdialog.js"></script>
+	<script type="text/javascript">
+function open1()
+{
+    lhgdialog.opendlg( '不带遮罩层的普通窗口', '_content/content1.html', 400, 300 );
+}
+function open2()
+{
+    lhgdialog.opendlg( '带遮罩层的普通窗口', '_content/content1.html', 400, 300, true );
+}
+function open3()
+{
+    lhgdialog.opendlg( '内容页为外部连接的窗口', 'http://www.google.com', 640, 480, false, true );
+}
+function open4()
+{
+    lhgdialog.opendlg( '内容页为html代码的窗口', '<div style="color:red;font-size:14px;">lhgdialog弹出窗口</div>', 400, 300, false, 'hcode' );
+}
+function open5()
+{
+    lhgdialog.opendlg( '带遮罩层带子窗口的窗口', '_content/content2.html', 400, 300, true );
+}
+function open6()
+{
+    lhgdialog.opendlg( '被调用页面关闭的窗口', '_content/content1.html', 400, 300, false, false, '', '', 'win1' );
+}
+function closdlg()
+{
+    lhgdialog.closdlg('win1');
+}
+function open7()
+{
+    lhgdialog.opendlg( '在指定位置弹出窗口', '_content/content1.html', 400, 300, false, false, 300, 100 );
+}
+function open8()
+{
+    lhgdialog.opendlg( '返回值到调用页面', '_content/content3.html', 400, 300 );
+}
+function open9()
+{
+    lhgdialog.opendlg( '窗口1', '_content/content4.html', 400, 300, false, false, '', '', 'dlg1' );
+}
+function open10()
+{
+    lhgdialog.opendlg( '窗口2', '_content/content5.html', 400, 300, false, false, '', '', 'dlg2' );
+}
+function open11()
+{
+    lhgdialog.opendlg( '创建其它按钮', '_content/content6.html', 400, 300 );
+}
+	</script>
+</head>
+<body>
+    <div id="content">
+		<h2>lhgdialog - samples</h2><hr />
+		<h3>1. 不带遮罩层的普通窗口 </h3>
+	    <div>
+	        <input type="button" id="a" value="不带遮罩层的普通窗口" onclick="open1()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '不带遮罩层的普通窗口', '/lhgdialog/_content/content1.html', 400, 300 );</span>
+		</div>
+		<h3>2. 带遮罩层的普通窗口 </h3>
+	    <div>
+		    <input type="button" id="b" value="带遮罩层的普通窗口" onclick="open2()"/><br/>
+		    <span>调用代码：lhgdialog.opendlg( '带遮罩层的普通窗口', '/lhgdialog/_content/content1.html', 400, 300, true );</span>
+	    </div>
+		<h3>3. 内容页为外部连接的窗口</h3>
+		<div>
+		    <input type="button" id="c" value="内容页为外部连接的窗口" onclick="open3()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '内容页为外部连接的窗口', 'http://www.google.com', 640, 480, '', true );</span>
+		</div>
+		<h3>4. 内容页为html代码的窗口</h3>
+		<div>
+		    <input type="button" id="d" value="内容页为html代码的窗口" onclick="open4()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '内容页为html代码的窗口', '&lt;div style=&quot;color:red;font-size:14px;&quot;&gt;lhgdialog弹出窗口&lt;/div&gt;', 400, 300, '', 'hcode' );</span>
+		</div>
+		<h3>5. 带遮罩层带子窗口的窗口</h3>
+		<div>
+		    <input type="button" id="e" value="带遮罩层带子窗口的窗口" onclick="open5()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '带遮罩层带子窗口的窗口', '/lhgdialog/_content/content2.html', 400, 300, true );</span><br/>
+			<span>子窗口的调用代码（写在content2.html里）：D.lhgdialog.opendlg( '我是子窗口', '', 400, 300, true );</span>
+		</div>
+		<h3>6. 在调用页面按钮关闭弹出窗口</h3>
+		<div>
+		    <input type="button" id="f" value="被调用页面关闭的窗口" onclick="open6()"/><input type="button" value="关闭弹出窗口" onclick="closdlg();"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '被调用页面关闭的窗口', '/lhgdialog/_content/content1.html', 400, 300, false, false, '', '', 'win1' );</span><br/>
+			<span>关闭窗口按钮代码：lhgdialog.closdlg('win1');</span>
+		</div>
+		<h3>7. 在指定位置弹出窗口</h3>
+		<div>
+		    <input type="button" id="g" value="在指定位置弹出窗口" onclick="open7()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '在指定位置弹出窗口', '/lhgdialog/_content/content1.html', 400, 300, false, false, 300, 100 );</span><br/>
+			<span>注：可以单独指定距左边位置或距顶部位置</span>
+		</div>
+		<h3>8. 返回值到调用页面</h3>
+		<div>
+		    <input type="button" id="h" value="返回值到调用页面" onclick="open8()"/><input type="text" id="getval" value="窗口的值返回到这里"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '返回值到调用页面', '/lhgdialog/_content/content3.html', 400, 300 );</span><br/>
+			<span>注：返回值的代码都在conent3.html里，你可打开这个文件查看</span>
+		</div>
+		<h3>9. 多窗口之间的传值</h3>
+		<div>
+		    <input type="button" id="i" value="窗口1" onclick="open9()"/><input type="button" id="j"  value="窗口2" onclick="open10();"/><br/>
+			<span>调用代码：窗口1：lhgdialog.opendlg( '窗口1', '/lhgdialog/_content/content4.html', 400, 300, false, false, '', '', 'dlg1');</span><br/>
+			<span>窗口2：lhgdialog.opendlg( '窗口2', '/lhgdialog/_content/content5.html', 400, 300, false, false, '', '', 'dlg2' );</span><br/>
+			<span>注：传值操作的代码都在content4.html和content5.html里，可打开查看。</span>
+		</div>
+		<h3>10. 创建其它按钮</h3>
+		<div>
+		    <input type="button" id="h" value="创建其它按钮" onclick="open11()"/><br/>
+			<span>调用代码：lhgdialog.opendlg( '创建其它按钮', '/lhgdialog/_content/content6.html', 400, 300 );</span><br/>
+			<span>注：创建其它按钮的方法都在content6.html里，可打开查看。</span>
+		</div>
+	</div>
+</body>
+</html>

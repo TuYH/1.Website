@@ -1,0 +1,19 @@
+/* Code tidied up by ScrapBook */
+html, body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0px; padding: 0px; border: 0px none; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+html { color: rgb(0, 0, 0); }
+html, body { height: 100%; }
+body, button, input, select, textarea { font-size: 12px; font-family: "Microsoft Yahei","微软雅黑",微软雅黑,"宋体",宋体,arial,"Hiragino Sans GB",Tahoma,Arial,Helvetica; }
+ul, ol, li, dl, dd, dt { list-style: outside none none; }
+em { font-style: normal; }
+a { text-decoration: none; }
+a:hover {  }
+legend { color: rgb(0, 0, 0); }
+fieldset, img { border: 0px none; }
+label, button { cursor: pointer; }
+img {  }
+.clearfix::after { content: ""; display: block; height: 0px; clear: both; }
+.clearfix {  }
+.clear { clear: both; }
+.wordwrap { word-break: break-all; overflow-wrap: break-word; }
+.omg { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

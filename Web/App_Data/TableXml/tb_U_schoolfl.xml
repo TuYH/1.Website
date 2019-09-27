@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_schoolfl>
+  <Field Type="SingleLine" Name="title" Title="名字" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="addtime" Title="发布时间" Note="发布时间" Prompt="发布时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="SingleLine" Name="Sid" Title="上级id" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="menuid" Title="类别" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="mb_id" Title="模板ID" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="mb_id" Title="模板ID" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[0]]></Field>
+</tb_U_schoolfl>

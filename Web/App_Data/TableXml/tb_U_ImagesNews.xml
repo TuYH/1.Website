@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_ImagesNews>
+  <Field Type="Image" Name="Images" Title="图片" Note="图片" Prompt="图片" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="addtime" Title="添加时间" Note="添加时间" Prompt="添加时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="SingleLine" Name="Title" Title="标题" Note="标题" Prompt="标题" MaxLength="50" Size="0" Validator="required"><![CDATA[]]></Field>
+</tb_U_ImagesNews>

@@ -1,0 +1,88 @@
+/* Code tidied up by ScrapBook */
+.more a { cursor: pointer; display: block; width: 48px; height: 9px; line-height: 9px; text-align: center; background: rgba(0, 0, 0, 0) url("../images/t1/more.png") no-repeat scroll 0% 0%; text-indent: -9999px; }
+.col { width: 1100px; margin: 0px auto; display: block; }
+.col2 { width: 1100px; margin: 10px auto 0px; display: block; }
+.w790 { width: 790px; float: left; }
+.w294 { width: 294px; float: right; }
+.xxdt { padding: 5px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.xxdt .hd { height: 40px; border-bottom: 1px dashed rgb(170, 170, 170); }
+.xxdt .hd .title { height: 40px; line-height: 40px; float: left; padding-left: 50px; background: rgba(0, 0, 0, 0) url("../images/t1/ico1.png") no-repeat scroll 10px center; font-size: 20px; color: rgb(107, 41, 43); }
+.xxdt .hd .title b { font-size: 24px; }
+.xxdt .hd .more { float: right; margin: 15px 10px 0px 0px; }
+.xxdt .bd { padding: 13px 15px 16px 10px; min-height: 272px; overflow: hidden; }
+.xxdt .focusPic { width: 316px; float: left; min-height: 272px; }
+.xxdt .focusNew { width: 410px; float: right; }
+.xxdt .headline { height: 30px; margin-bottom: 12px; }
+.xxdt .focusList {  }
+.tzgg { padding: 5px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.tzgg .hd { height: 40px; border-bottom: 1px dashed rgb(170, 170, 170); }
+.tzgg .hd .title { height: 40px; line-height: 40px; float: left; padding-left: 50px; background: rgba(0, 0, 0, 0) url("../images/t1/ico2.png") no-repeat scroll 10px center; font-size: 20px; color: rgb(107, 41, 43); }
+.tzgg .hd .title b { font-size: 24px; }
+.tzgg .hd .more { float: right; margin: 15px 10px 0px 0px; }
+.tzgg .bd { padding: 0px 2px 3px; min-height: 272px; overflow: hidden; }
+.box { width: 378px; padding: 5px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.box .hd { height: 40px; border-bottom: 1px dashed rgb(170, 170, 170); }
+.box .hd .title { height: 40px; line-height: 40px; float: left; padding-left: 50px; background: rgba(0, 0, 0, 0) url("../images/t1/ico2.png") no-repeat scroll 10px center; font-size: 20px; color: rgb(107, 41, 43); }
+.box .hd .title b { font-size: 24px; }
+.box .hd .more { float: right; margin: 15px 10px 0px 0px; }
+.box .bd { padding: 10px 10px 0px 20px; min-height: 266px; overflow: hidden; }
+.box .hot { height: 30px; line-height: 30px; margin-bottom: 5px; }
+.box .infoList {  }
+.kyjx .hd .title { background: rgba(0, 0, 0, 0) url("../images/t1/ico3.png") no-repeat scroll 10px center; }
+.ydzf .hd .title { background: rgba(0, 0, 0, 0) url("../images/t1/ico4.png") no-repeat scroll 10px center; }
+.xysp { padding: 5px 10px 18px 12px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.xysp .hd { height: 40px; }
+.xysp .hd .title { height: 40px; line-height: 40px; float: left; padding-left: 50px; background: rgba(0, 0, 0, 0) url("../images/t1/ico5.png") no-repeat scroll 10px center; font-size: 20px; color: rgb(107, 41, 43); }
+.xysp .hd .title b { font-size: 24px; }
+.xysp .hd .more { float: right; margin: 15px 10px 0px 0px; }
+.xysp .bd { padding: 18px 0px 0px; min-height: 247px; }
+.qtdh { height: 64px; margin-top: 12px; }
+.qtdh li { width: 143px; height: 64px; line-height: 64px; background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.qtdh li a { display: block; padding-left: 56px; font-size: 16px; font-weight: bold; color: rgb(107, 41, 43); }
+.qtdh li.dh1 a { background: rgba(0, 0, 0, 0) url("../images/t1/ico6.png") no-repeat scroll 20px center; }
+.qtdh li.dh2 a { background: rgba(0, 0, 0, 0) url("../images/t1/ico7.png") no-repeat scroll 20px center; }
+.kjdh { background: rgb(242, 236, 222) none repeat scroll 0% 0%; }
+.kjdh .hd { height: 40px; padding: 0px 12px; }
+.kjdh .hd .title { height: 40px; line-height: 40px; float: left; font-size: 20px; color: rgb(107, 41, 43); }
+.kjdh .hd .title b { font-size: 24px; }
+.kjdh .hd .more { float: right; margin: 15px 10px 0px 0px; }
+.kjdh .bd { padding: 5px 5px 17px; min-height: 266px; }
+.kjdh .bd li { float: left; width: 65px; margin: 5px 14px; text-align: center; }
+.kjdh .bd li a { dpx 14px; text-align: center; }
+.kjdh .bd li a { display: block; color: rgb(107, 41, 43); text-decoration: none; }
+.kjdh .bd li span { display: block; margin: 0px auto 5px; width: 65px; height: 52px; background: rgb(208, 187, 169) url("../images/t1/kjlj.png") no-repeat scroll 0% 0%; transition: all 0.2s ease-out 0s; }
+.kjdh .bd li.li02 span { background-position: -93px 0px; }
+.kjdh .bd li.li03 span { background-position: -186px 0px; }
+.kjdh .bd li.li04 span { background-position: 0px -90px; }
+.kjdh .bd li.li05 span {  }
+.kjdh .bd li.li06 span { background-position: -186px -90px; }
+.kjdh .bd li.li07 span { background-position: 0px -182px; }
+.kjdh .bd li.li08 span { background-position: -93px -182px; }
+.kjdh .bd li.li09 span { background-position: -93px -182px; }
+.kjdh .bd li a:hover span { display: block; margin: 0px auto 5px; width: 65px; height: 52px; background: rgb(208, 187, 169) url("../images/t1/kjljHover.png") no-repeat scroll 0% 0%; transition: all 0.2s ease-out 0s; }
+.kjdh .bd li.li02 a:hover span { background-position: -93px 0px; }
+.kjdh .bd li.li03 a:hover span { background-position: -186px 0px; }
+.kjdh .bd li.li04 a:hover span { background-position: 0px -90px; }
+.kjdh .bd li.li05 a:hover span {  }
+.kjdh .bd li.li06 a:hover span { background-position: -186px -90px; }
+.kjdh .bd li.li07 a:hover span { background-position: 0px -182px; }
+.kjdh .bd li.li08 a:hover span { background-position: -93px -182px; }
+.kjdh .bd li.li09 a:hover span { background-position: -93px -182px; }
+.kjdh .bd li a:hover { color: rgb(171, 42, 54); }
+.picTab { width: 1040px; margin: 10px auto 0px; padding: 15px 30px 5px; background: rgb(241, 236, 222) none repeat scroll 0% 0%; }
+.picTab .TabTitle { height: 34px; line-height: 34px; position: relative; }
+.picTab .TabTitle li { float: left; width: 102px; height: 34px; line-height: 34px; margin-right: 10px; cursor: pointer; text-align: center; color: rgb(107, 41, 43); }
+.picTab .TabTitle li a { font-size: 18px; color: rgb(107, 41, 43); }
+.picTab .TabTitle li.active { border-bottom: 2px solid rgb(184, 179, 167); }
+.picTab .TabContent { padding: 30px 0px 0px; }
+.picTab .Cont { width: 1040px; overflow: hidden; position: relative; min-height: 206px; }
+.picTab .Cont .next, .picTab .Cont .prev { position: absolute; z-index: 1; top: 30%; width: 28px; height: 53px; float: left; }
+.picTab .Cont .next { right: 0px; background: rgba(0, 0, 0, 0) url("../images/t1/next.png") no-repeat scroll 0% 0%; }
+.picTab .Cont .prev { left: 0px; background: rgba(0, 0, 0, 0) url("../images/t1/prev.png") no-repeat scroll 0% 0%; }
+.picTab .tempWrap {  margin: 0px auto; }
+.none { display: none; }
+
+.col_main .col_left {
+    float: left;
+    width: 250px;
+}

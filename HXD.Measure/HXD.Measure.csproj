@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AA415A0-5DB9-47D7-807F-A6CD8208D683}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HXD.Measure</RootNamespace>
+    <AssemblyName>HXD.Measure</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="ExamResult.cs" />
+    <Compile Include="ExamResult2.cs" />
+    <Compile Include="SchoolDB.cs" />
+    <Compile Include="Scorer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScorerBAI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerCareerVector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerCMIFemale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerCMIMale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerCPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerEPQ.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerHLD.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerK16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerMMPIFemale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerMMPIMale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerSAS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerSCL.cs" />
+    <Compile Include="ScorerSDS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerSuicide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerTemperament.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerTypeA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScorerUPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StandScoreItem.cs" />
+    <Compile Include="StandScorer.cs" />
+    <Compile Include="SubItem.cs" />
+    <Compile Include="SubitemScoreEntry.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HXD.BLL\HXD.BLL.csproj">
+      <Project>{A35AEF08-97B2-4417-8FAB-EDEF8122AA30}</Project>
+      <Name>HXD.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Common\HXD.Common.csproj">
+      <Project>{0B8D78D5-E320-4026-8266-282AF7D8CEF1}</Project>
+      <Name>HXD.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.DALFactory\HXD.DALFactory.csproj">
+      <Project>{F0285C5E-B164-471A-A816-8608410B6112}</Project>
+      <Name>HXD.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.DBUtility\HXD.DBUtility.csproj">
+      <Project>{B21EC49A-7A9C-4C6A-965C-4926C51F896D}</Project>
+      <Name>HXD.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.IDAL\HXD.IDAL.csproj">
+      <Project>{DE2A9F9A-6820-4A11-BEA5-41348E7F8C78}</Project>
+      <Name>HXD.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.ModelField\HXD.ModelField.csproj">
+      <Project>{43D564E1-1193-4E8A-8A71-0D5E102198D3}</Project>
+      <Name>HXD.ModelField</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Model\HXD.Model.csproj">
+      <Project>{197C80A5-3A05-4A0E-A4EB-3A69F066B9BC}</Project>
+      <Name>HXD.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.SQLServerDAL\HXD.SQLServerDAL.csproj">
+      <Project>{F43517A4-FBA5-4431-9696-5842473F04A7}</Project>
+      <Name>HXD.SQLServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Template\HXD.Template.csproj">
+      <Project>{C3F1452F-D17C-4816-8D1B-C43D7072E34A}</Project>
+      <Name>HXD.Template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

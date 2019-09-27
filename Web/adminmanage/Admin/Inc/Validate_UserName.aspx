@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Validate_UserName.aspx.cs" Inherits="adminmanage_Admin_Inc_Validate_UserName" EnableViewStateMac="false" EnableEventValidation="false" ViewStateEncryptionMode="Never" %>
+<%@ OutputCache Location="none" %>

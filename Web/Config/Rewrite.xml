@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rewriteRules>
+    <rewrite url="^/Search-(\d{1,9})-(\d{1,9})-(\d{1,9})-(\d{1,9}).html$" to="~/Search.aspx?S1=$1&amp;S2=$2&amp;S3=$3&amp;S4=$4" />
+    <rewrite url="^/CarInfo_(\d{1,9}).html$" to="~/CarInfo.aspx?id=$1" />
+    <rewrite url="^/NewsContent_(\d{1,9}).html$" to="~/NewsContent.aspx?id=$1" />
+    <rewrite url="^/About.html$" to="~/About.aspx" />
+    <rewrite url="^/CarTypesList.html$" to="~/CarTypesList.aspx" />
+    <rewrite url="^/DJList.html$" to="~/DJList.aspx" />
+    <rewrite url="^/NewsList.html$" to="~/NewsList.aspx" />
+    <rewrite url="^/NewsListCase.html$" to="~/NewsListCase.aspx" />
+    <rewrite url="^/NewsListPreferential.html$" to="~/NewsListPreferential.aspx" />
+    <rewrite url="^/ZJList.html$" to="~/ZJList.aspx" />
+</rewriteRules>

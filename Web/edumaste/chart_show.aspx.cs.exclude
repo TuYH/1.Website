@@ -1,0 +1,168 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using HXD.Common;
+using System.Data;
+
+
+public partial class edumaste_chart_show : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!base.get_IsPostBack())
+        {
+            string studentNo = base.get_Request().get_Item("studentno");
+            if (studentNo == null || studentNo == "")
+            {
+                PageBase.MessageBox("缺少参数！");
+                PageBase.CloseWindow();
+            }
+            else
+            {
+                DataRow dr = SchoolDB.GetStudent(studentNo);
+                if (dr == null)
+                {
+                    PageBase.MessageBox("该会员不存在！");
+                    PageBase.CloseWindow();
+                }
+                else
+                {
+                    this.lblCompanyName.set_Text(Config.CompanyName);
+                    this.lbXq.set_Text("主校区");
+                    this.lbYx.set_Text(dr.get_Item("CollegeName").ToString());
+                    this.lbZy.set_Text(dr.get_Item("StudyName").ToString());
+                    this.lbBj.set_Text(dr.get_Item("ClassName").ToString());
+                    this.lbZh.set_Text(dr.get_Item("StudentNo").ToString());
+                    this.lbXm.set_Text(dr.get_Item("StudentName").ToString());
+                    this.lbXb.set_Text(dr.get_Item("Sex").ToString());
+                    this.lbCsrq.set_Text(dr.get_Item("Birthday").ToString());
+                    this.lbMz.set_Text(dr.get_Item("NationName").ToString());
+                    this.lbJj.set_Text(dr.get_Item("Grade").ToString());
+                    string paperId = base.get_Request().get_Item("paperid");
+                    string resultId = base.get_Request().get_Item("resultid");
+                    if (paperId == null || paperId == "" || resultId == null || resultId == "")
+                    {
+                        PageBase.MessageBox("缺少参数！");
+                        PageBase.CloseWindow();
+                    }
+                    else
+                    {
+                        DataRow drResult = ExamResult.GetResult(studentNo, int.Parse(resultId));
+                        if (dr == null)
+                        {
+                            PageBase.MessageBox("该记录不存在！");
+                            PageBase.CloseWindow();
+                        }
+                        else
+                        {
+                            int paperID = int.Parse(paperId);
+                            string paperName;
+                            string paperDesc;
+                            ExamPaper.GetPaperInfo(paperID, out paperName, out paperDesc);
+                            this.lblPaperName.set_Text(paperName);
+                            this.lblTestTime.set_Text(drResult.get_Item("FtestTime").ToString());
+                            this.lblTotalScore.set_Text(drResult.get_Item("Fscore").ToString());
+                            this.lblResult.set_Text(drResult.get_Item("Fresult").ToString());
+                            string answerDetail = "";
+                            string[] answerArray = drResult.get_Item("Fanswer").ToString().Split(new char[]
+								{
+									'|'
+								});
+                            for (int i = 0; i < answerArray.Length; i++)
+                            {
+                                string text = answerDetail;
+                                answerDetail = string.Concat(new string[]
+									{
+										text,
+										(i + 1).ToString(),
+										".",
+										this.ParseAnswer(answerArray[i]),
+										"&nbsp;&nbsp;"
+									});
+                                if ((i + 1) % 10 == 0 && i != 0)
+                                {
+                                    answerDetail += "<br/>";
+                                }
+                            }
+                            this.lblAnswerDetail.set_Text(answerDetail);
+                            DataTable dtSubitemResult = ExamResult.GetSubItemResult(studentNo, paperID, int.Parse(resultId), 1);
+                            if (dtSubitemResult.get_Rows().get_Count() != 0)
+                            {
+                                dtSubitemResult.get_Columns().Remove("FstudentNo");
+                                this.DataGrid1.set_DataSource(dtSubitemResult);
+                                this.DataGrid1.DataBind();
+                                string resultExplain = "";
+                                string headerTextArray = "[";
+                                string datasArray = "[[";
+                                float[] subitemScores = new float[dtSubitemResult.get_Columns().get_Count()];
+                                for (int j = 0; j < dtSubitemResult.get_Columns().get_Count(); j++)
+                                {
+                                    string subitemName = dtSubitemResult.get_Columns().get_Item(j).get_ColumnName();
+                                    string subitemScore = dtSubitemResult.get_Rows().get_Item(0).get_Item(j).ToString();
+                                    headerTextArray = headerTextArray + "'" + subitemName + "'";
+                                    datasArray += subitemScore;
+                                    if (j != dtSubitemResult.get_Columns().get_Count() - 1)
+                                    {
+                                        headerTextArray += ",";
+                                        datasArray += ",";
+                                    }
+                                    string explain = ExamResult.GetSubItemResultExplain(paperID, subitemName, float.Parse(subitemScore));
+                                    if (explain != "")
+                                    {
+                                        string text2 = resultExplain;
+                                        resultExplain = string.Concat(new string[]
+											{
+												text2,
+												subitemName,
+												"的得分：",
+												subitemScore,
+												"<br/>"
+											});
+                                        resultExplain += explain;
+                                        resultExplain += "<br/><br/>";
+                                    }
+                                    subitemScores[j] = float.Parse(subitemScore);
+                                }
+                                headerTextArray += "];";
+                                datasArray += "]];";
+                                string script = string.Concat(new string[]
+									{
+										"<script language='javascript'>var headerTextArray = ",
+										headerTextArray,
+										"\nvar datasArray = ",
+										datasArray,
+										"</script>"
+									});
+                                this.RegisterClientScriptBlock("vars", script);
+                                if (paperID == 81 || paperID == 82)
+                                {
+                                    int[] excludeIdxs = new int[]
+										{
+											1,
+											2,
+											3
+										};
+                                    int count = 2;
+                                    resultExplain = ExamResult.GetSubItemResultExplain(paperID, subitemScores, excludeIdxs, count);
+                                }
+                                else
+                                {
+                                    if (paperID == 79)
+                                    {
+                                        int[] excludeIdxs2 = null;
+                                        int count2 = 3;
+                                        resultExplain = ExamResult.GetSubItemResultExplain(paperID, subitemScores, excludeIdxs2, count2);
+                                    }
+                                }
+                                this.lblSubitemResultExplain.set_Text(resultExplain);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

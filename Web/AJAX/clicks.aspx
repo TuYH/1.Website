@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="clicks.aspx.cs" Inherits="AJAX_clicks" %>

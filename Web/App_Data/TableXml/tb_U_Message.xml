@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_Message>
+  <Field Type="SingleLine" Name="Name" Title="姓名" Note="" Prompt="" MaxLength="50" Size="30" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Tel" Title="电话" Note="" Prompt="" MaxLength="50" Size="30" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Address" Title="地址" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Title" Title="留言标题" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="Replay" Title="回复内容" Note="" Prompt="" EditorType="1" Width="450" Height="300" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="留言时间" Note="" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="留言时间" Note="" Prompt="" DateTime="yyyy-mm-dd" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="MultiLine" Name="Content" Title="留言内容" Note="" Prompt="" Width="450" Height="300" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="zxs_id" Title="咨询师编号" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="yy_time" Title="预约时间" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="zxs_name" Title="咨询师名字" Note="咨询师名字" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="state" Title="状态" Note="" Prompt="" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="uid" Title="用户id" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+</tb_U_Message>

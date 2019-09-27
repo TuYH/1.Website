@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_DownLoad>
+  <Field Type="SingleLine" Name="Title" Title="软件名称" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Photo" Name="Photo" Title="标题图片" Note="" Prompt="" IsUploadPhoto="True" UploadPhotoSize="2048" UploadPhotoType="jpg|gif|png|jpeg" IsSelect="False" IsMark="False" MarkImage="" IsThumb="False" ThumbSize="" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Url" Title="外部链接" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="MultiLine" Name="Note" Title="文件概要" Note="" Prompt="" Width="500" Height="100" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="Content" Title="文件说明" Note="" Prompt="" EditorType="2" Width="500" Height="400" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Tags" Title="相关标签" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Version" Title="版本号" Note="" Prompt="" MaxLength="50" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Select" Name="Runtime" Title="运行环境" Note="" Prompt="" Options="Win9X&#xD;&#xA;WinME&#xD;&#xA;WinNT&#xD;&#xA;Win2K&#xD;&#xA;WinXP&#xD;&#xA;Win2003&#xD;&#xA;Vista&#xD;&#xA;Dos&#xD;&#xA;Linux&#xD;&#xA;Unix&#xD;&#xA;Mac&#xD;&#xA;Asp.net&#xD;&#xA;Php&#xD;&#xA;Asp&#xD;&#xA;Jsp&#xD;&#xA;CGI&#xD;&#xA;其他" OptionsType="checkbox" Validator=""><![CDATA[]]></Field>
+  <Field Type="Select" Name="Nature" Title="性质" Note="" Prompt="" Options="国产软件&#xD;&#xA;国外软件&#xD;&#xA;汉化补丁&#xD;&#xA;程序源码&#xD;&#xA;电影下载&#xD;&#xA;Flash动画&#xD;&#xA;其它" OptionsType="select" Validator=""><![CDATA[]]></Field>
+  <Field Type="Select" Name="Language" Title="语言" Note="" Prompt="" Options="简体中文&#xD;&#xA;繁体中文&#xD;&#xA;多国语言&#xD;&#xA;英文&#xD;&#xA;其它语言" OptionsType="select" Validator=""><![CDATA[]]></Field>
+  <Field Type="Select" Name="Licenses" Title="授权" Note="" Prompt="" Options="免费版&#xD;&#xA;共享版&#xD;&#xA;试用版&#xD;&#xA;演示版&#xD;&#xA;注册版&#xD;&#xA;破解版&#xD;&#xA;零售版&#xD;&#xA;其它版本" OptionsType="select" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="DownFrom" Title="软件来源" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="File" Name="DownFile" Title="文件下载" Note="" Prompt="" IsUploadFile="True" UploadFileSize="2048" UploadFileType="rar|zip|7z|" IsSelect="False" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="DownUrl2" Title="境像2" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="DownUrl1" Title="境像1" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="DemoUrl" Title="演示地址" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Password" Name="RarPwd" Title="解压密码" Note="" Prompt="" MaxLength="20" Size="60" PwdMode="MD5" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="FileSize" Title="文件大小" Note="单位为：KB/MB/GB（例：20MB）" Prompt="" MaxLength="50" Size="60" Validator=""><![CDATA[]]></Field>
+</tb_U_DownLoad>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Microsoft Visual Studio 2010 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkID=104956
+
+-->
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.30319</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FA20E55-CDDE-45BE-AE69-D5BF58E7926B}</ProjectGuid>
+    <SourceWebPhysicalPath>..\Web</SourceWebPhysicalPath>
+    <SourceWebProject>{41876751-E07F-41AA-BD60-A6EFE39DE150}|D:\灵心心理\1.Website\Web</SourceWebProject>
+    <SourceWebVirtualPath>/Web</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\Debug</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Web_deploy</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\Release</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Web_deploy</SingleAssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HXD.BLL\HXD.BLL.csproj">
+      <Project>{A35AEF08-97B2-4417-8FAB-EDEF8122AA30}</Project>
+      <Name>HXD.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Common\HXD.Common.csproj">
+      <Project>{0B8D78D5-E320-4026-8266-282AF7D8CEF1}</Project>
+      <Name>HXD.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.DALFactory\HXD.DALFactory.csproj">
+      <Project>{F0285C5E-B164-471A-A816-8608410B6112}</Project>
+      <Name>HXD.DALFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.DBUtility\HXD.DBUtility.csproj">
+      <Project>{B21EC49A-7A9C-4C6A-965C-4926C51F896D}</Project>
+      <Name>HXD.DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.IDAL\HXD.IDAL.csproj">
+      <Project>{DE2A9F9A-6820-4A11-BEA5-41348E7F8C78}</Project>
+      <Name>HXD.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Measure\HXD.Measure.csproj">
+      <Project>{8AA415A0-5DB9-47D7-807F-A6CD8208D683}</Project>
+      <Name>HXD.Measure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.ModelField\HXD.ModelField.csproj">
+      <Project>{43D564E1-1193-4E8A-8A71-0D5E102198D3}</Project>
+      <Name>HXD.ModelField</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Model\HXD.Model.csproj">
+      <Project>{197C80A5-3A05-4A0E-A4EB-3A69F066B9BC}</Project>
+      <Name>HXD.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.SQLServerDAL\HXD.SQLServerDAL.csproj">
+      <Project>{F43517A4-FBA5-4431-9696-5842473F04A7}</Project>
+      <Name>HXD.SQLServerDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HXD.Template\HXD.Template.csproj">
+      <Project>{C3F1452F-D17C-4816-8D1B-C43D7072E34A}</Project>
+      <Name>HXD.Template</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v10.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

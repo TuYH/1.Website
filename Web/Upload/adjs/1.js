@@ -1,0 +1,1 @@
+﻿var myDate = new Date();var d1 = new Date("2015/01/11");if (Date.parse(myDate) - Date.parse(d1) < 0&&true){document.write("<a href=\"http://www.baidu.com\" title=\"www.baidu.com\" target=\"_blank\">百度</a>");}

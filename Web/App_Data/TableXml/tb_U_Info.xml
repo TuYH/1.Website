@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_Info>
+  <Field Type="Password" Name="LookPwd" Title="访问密码" Note="浏览信息时所需要的密码" Prompt="20个字符" MaxLength="20" Size="60" PwdMode="MD5" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="Content" Title="内容" Note="详细内容" Prompt="" EditorType="3" Width="580" Height="400" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="发布日期" Note="" Prompt="必须为日期" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="SingleLine" Name="Author" Title="作者" Note="作者" Prompt="" MaxLength="50" Size="60" Validator=""><![CDATA[佚名]]></Field>
+  <Field Type="Select" Name="Year" Title="年份" Note="选择信息年份" Prompt="" Options="2005&#xD;&#xA;2006&#xD;&#xA;2007&#xD;&#xA;2008&#xD;&#xA;2009" OptionsType="select" Validator=""><![CDATA[2009]]></Field>
+  <Field Type="MultiLine" Name="Note" Title="信息概要" Note="信息的简单介绍" Prompt="概要不得超过500字符！" Width="500" Height="100" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Title1" Title="副标题" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="Conut" Title="点击率" Note="此信息所包含的字符个数" Prompt="必须为数字" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="Url" Title="外部链接" Note="" Prompt="" MaxLength="300" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="InfoEditor" Title="责编" Note="" Prompt="" MaxLength="50" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="InfoFrom" Title="信息来源" Note="信息来源" Prompt="" MaxLength="50" Size="60" Validator=""><![CDATA[本站原创]]></Field>
+  <Field Type="SingleLine" Name="AboutTag" Title="相关标签" Note="" Prompt="" MaxLength="50" Size="20" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Title" Title="标题" Note="信息标题" Prompt="不能为空" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="KeyWords" Title="关键字" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="MultiLine" Name="Description" Title="描述" Note="" Prompt="" Width="500" Height="100" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="KeyWords" Title="关键词" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="MultiLine" Name="Description" Title="描述" Note="" Prompt="" Width="500" Height="100" Validator=""><![CDATA[]]></Field>
+  <Field Type="Image" Name="Photo" Title="图片" Note="" Prompt="" Validator=""><![CDATA[http://www.hnxlzx.cn/style/images/bg.jpg]]></Field>
+  <Field Type="SingleLine" Name="Userid" Title="用户id" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+</tb_U_Info>

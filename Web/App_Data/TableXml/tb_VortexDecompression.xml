@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_VortexDecompression >
+  <Field Type="Number" Name="User_id" Title="用户id" Note="用户id" Prompt="" Bit="0" Validator=""><![CDATA[null]]></Field>
+  <Field Type="Number" Name="Heart_rate" Title="心率" Note="心率" Prompt="" Bit="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="Blood_oxygen" Title="血氧" Note="血氧" Prompt="" Bit="2" Validator=""><![CDATA[null]]></Field>
+  <Field Type="Number" Name="Diastolic_pressure" Title="舒张压" Note="舒张压" Prompt="" Bit="0" Validator=""><![CDATA[null]]></Field>
+  <Field Type="Number" Name="Systolic_pressure" Title="收缩压" Note="收缩压" Prompt="" Bit="0" Validator=""><![CDATA[null]]></Field>
+  <Field Type="SingleLine" Name="Fatigue_strength" Title="疲劳度" Note="疲劳度" Prompt="" MaxLength="50" Size="0" Validator=""><![CDATA[null]]></Field>
+  <Field Type="DateTime" Name="Creation_time" Title="创建时间" Note="创建时间" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[(getdate())]]></Field>
+  <Field Type="DateTime" Name="Creation_time" Title="创建时间" Note="创建时间" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[(getdate())]]></Field>
+  <Field Type="DateTime" Name="Update_time" Title="修改时间" Note="修改时间" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[null]]></Field>
+</tb_VortexDecompression>

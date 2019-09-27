@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_Advertisement>
+  <Field Type="SingleLine" Name="AdName" Title="广告名称" Note="广告名称" Prompt="广告名称" MaxLength="50" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="Width" Title="广告宽度" Note="广告宽度" Prompt="广告宽度" Bit="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="Width" Title="广告宽度" Note="广告宽度" Prompt="广告宽度" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="Number" Name="Height" Title="广告高度" Note="广告高度" Prompt="广告高度" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="Files" Title="图片文件" Note="图片文件" Prompt="图片文件" MaxLength="4000" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Files" Title="图片文件" Note="图片文件" Prompt="图片文件" MaxLength="5000" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Files" Title="图片文件" Note="图片文件" Prompt="图片文件" MaxLength="4000" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="FileType" Title="图片类型" Note="图片类型" Prompt="图片类型" Bit="0" Validator=""><![CDATA[1]]></Field>
+  <Field Type="SingleLine" Name="href" Title="文字广告连接" Note="文字广告连接" Prompt="文字广告连接" MaxLength="300" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Elucidation" Title="连接说明" Note="连接说明" Prompt="连接说明" MaxLength="100" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="scripttext" Title="脚本广告" Note="脚本广告" Prompt="脚本广告" EditorType="1" Width="0" Height="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="Number" Name="type" Title="广告类型" Note="广告类型" Prompt="广告类型" Bit="0" Validator=""><![CDATA[1]]></Field>
+  <Field Type="DateTime" Name="CloseTime" Title="广告到期时间" Note="广告到期时间" Prompt="广告到期时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="CloseTime" Title="广告到期时间" Note="广告到期时间" Prompt="广告到期时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="Number" Name="isqiyong" Title="是否启用" Note="是否启用" Prompt="是否启用" Bit="0" Validator=""><![CDATA[1]]></Field>
+  <Field Type="DateTime" Name="submittime" Title="提交时间" Note="提交时间" Prompt="提交时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+</tb_U_Advertisement>

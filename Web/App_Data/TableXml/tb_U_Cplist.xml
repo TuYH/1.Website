@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_Cplist>
+  <Field Type="SingleLine" Name="title" Title="测评标题" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="cp_set" Title="量表ID" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="cp_umun" Title="测评人数" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="Posttime" Title="提交时间" Note="" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="SingleLine" Name="post_uid" Title="发布人" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+</tb_U_Cplist>

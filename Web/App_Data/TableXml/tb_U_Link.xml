@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_Link>
+  <Field Type="SingleLine" Name="SiteName" Title="站点名称" Note="链接站点的名称，或链接标题" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="LinkUrl" Title="链接地址" Note="友情链接的链接地址" Prompt="地址需要加http://" MaxLength="300" Size="60" Validator=""><![CDATA[http://]]></Field>
+  <Field Type="Image" Name="Photo" Title="图片" Note="" Prompt="" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="发布时间" Note="" Prompt="发布时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+</tb_U_Link>

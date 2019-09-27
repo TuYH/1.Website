@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_TouPiao>
+  <Field Type="SingleLine" Name="title" Title="投票的标题" Note="投票的标题" Prompt="投票的标题" MaxLength="100" Size="0" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="ReleaseTime" Title="发布时间" Note="发布时间" Prompt="发布时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="Number" Name="ClickNumber" Title="点击量" Note="点击量" Prompt="点击量" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="Number" Name="VoteType" Title="投票类型" Note="投票类型1为多选2为单选" Prompt="投票类型" Bit="0" Validator=""><![CDATA[1]]></Field>
+  <Field Type="Number" Name="is_Examine" Title="是否审核" Note="是否审核" Prompt="是否审核" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="Number" Name="is_Recommendation" Title="是否推荐" Note="是否推荐" Prompt="是否推荐" Bit="0" Validator=""><![CDATA[0]]></Field>
+  <Field Type="DateTime" Name="end_time" Title="到期时间" Note="到期时间" Prompt="到期时间" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+</tb_U_TouPiao>

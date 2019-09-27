@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_school>
+  <Field Type="SingleLine" Name="s_name" Title="学校名称" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="创建时间" Note="" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="MultiLine" Name="note" Title="学校简介" Note="概要不得超过500字符！" Prompt="概要不得超过500字符！" Width="200" Height="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Image" Name="logo" Title="图片" Note="" Prompt="PNG 375x152 像素 " Validator=""><![CDATA[http://cp.hnxlzx.cn/images/t1/logo1.png]]></Field>
+</tb_U_school>

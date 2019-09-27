@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tb_U_User>
+  <Field Type="Select" Name="Sex" Title="性别" Note="" Prompt="" Options="男&#xD;&#xA;女" OptionsType="radio" Validator=""><![CDATA[男]]></Field>
+  <Field Type="DateTime" Name="Birthday" Title="生日" Note="" Prompt="" DateTime="yyyy-mm-dd" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="Select" Name="Certificate" Title="证件类别" Note="" Prompt="" Options="身份证&#xD;&#xA;学生证&#xD;&#xA;驾驶证&#xD;&#xA;军人证&#xD;&#xA;护照" OptionsType="select" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="CerTificateCode" Title="证件号码" Note="" Prompt="" MaxLength="30" Size="30" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Address" Title="联系地址" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="PostCode" Title="邮政编码" Note="" Prompt="" MaxLength="20" Size="20" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Tel" Title="联系电话" Note="" Prompt="" MaxLength="20" Size="20" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Mobile" Title="手机" Note="" Prompt="" MaxLength="20" Size="20" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="HomePage" Title="个人网站" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="QQ" Title="QQ" Note="" Prompt="" MaxLength="15" Size="15" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="MSN" Title="MSN" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="Select" Name="UserFavor" Title="您的爱好" Note="" Prompt="" Options="阅读写作&#xD;&#xA;逛街购物&#xD;&#xA;计算机网络&#xD;&#xA;聊天哈拉&#xD;&#xA;音乐欣赏&#xD;&#xA;登山健行 &#xD;&#xA;电玩对战&#xD;&#xA;星象命理&#xD;&#xA;电视电影&#xD;&#xA;运动钓鱼&#xD;&#xA;下棋弹琴&#xD;&#xA;塑身美容 &#xD;&#xA;动画漫画&#xD;&#xA;美食烹调&#xD;&#xA;语言学习&#xD;&#xA;投资理财&#xD;&#xA;摄影绘画&#xD;&#xA;唱歌跳舞 &#xD;&#xA;兜风闲晃&#xD;&#xA;游山玩水&#xD;&#xA;吃喝玩乐&#xD;&#xA;古董收藏&#xD;&#xA;发呆睡觉&#xD;&#xA;占星算命 &#xD;&#xA;园艺花卉&#xD;&#xA;饲养宠物&#xD;&#xA;其他" OptionsType="checkbox" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="Name" Title="姓名" Note="" Prompt="" MaxLength="20" Size="20" Validator=""><![CDATA[]]></Field>
+  <Field Type="Editor" Name="SelfIntro" Title="自我介绍" Note="" Prompt="" EditorType="1" Width="480" Height="200" Validator=""><![CDATA[]]></Field>
+  <Field Type="Provinces" Name="Area" Title="地区" Note="" Prompt="" Validator=""><![CDATA[]]></Field>
+  <Field Type="Password" Name="Password" Title="密码" Note="" Prompt="" MaxLength="0" Size="0" PwdMode="MD5" Validator=""><![CDATA[]]></Field>
+  <Field Type="Password" Name="Password" Title="密码" Note="" Prompt="" MaxLength="100" Size="50" PwdMode="MD5" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="classid" Title="类别标示" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[0]]></Field>
+  <Field Type="SingleLine" Name="nationality" Title="民族" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="ks_name" Title="科室名称" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="nianji" Title="年级/一级" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="banji" Title="班级/二级" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="SingleLine" Name="jieji" Title="届级" Note="入学、入职 年份" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+  <Field Type="DateTime" Name="PostTime" Title="发布时间" Note="" Prompt="" DateTime="yyyy-mm-dd hh:mm:ss" Validator=""><![CDATA[getdate()]]></Field>
+  <Field Type="SingleLine" Name="shengri" Title="生日" Note="" Prompt="" MaxLength="200" Size="60" Validator=""><![CDATA[]]></Field>
+</tb_U_User>

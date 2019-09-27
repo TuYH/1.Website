@@ -1,0 +1,2 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Validate_Sort.aspx.cs" Inherits="adminmanage_Model_Inc_Validate_Sort" EnableViewStateMac="false" EnableEventValidation="false" ViewStateEncryptionMode="Never" %>
+<%@ OutputCache Location="none" %>
