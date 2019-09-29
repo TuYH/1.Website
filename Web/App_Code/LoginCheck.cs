@@ -162,7 +162,7 @@ public class LoginCheck
 
     public static void adminOsk()
     {
-        Process kbpr = System.Diagnostics.Process.Start("osk.exe"); // 打开系统键盘
+        Process kbpr = System.Diagnostics.Process.Start("osk.exe"); // 打开系统键盘wuzonggao
         if (kbpr.HasExited)
         {
             kbpr = System.Diagnostics.Process.Start("osk.exe");
